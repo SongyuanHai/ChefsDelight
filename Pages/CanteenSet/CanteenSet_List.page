@@ -1,0 +1,50 @@
+{
+	"Caption": "CanteenSet",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/ChefsDelight/Actions/CanteenSet/NavToCanteenSet_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/ChefsDelight/Actions/CanteenSet/NavToCanteenSet_Detail.action",
+				"StatusImage": "",
+				"Title": "{Name}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{CanteenID}",
+				"Subhead": "{Location}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "CanteenSet",
+				"Service": "/ChefsDelight/Services/canteenService.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "CanteenSet_List"
+}

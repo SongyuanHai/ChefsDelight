@@ -1,0 +1,84 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Text": "Cancel",
+				"Visible": true
+			},
+			{
+				"OnPress": "/ChefsDelight/Actions/CreateMenu.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Text": "Save",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Create Menu",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Main Dish",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCMainDish",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Price",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCPrice",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "KCal",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCKcal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sides",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCSides",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Soup",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCSoup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Date of Lunch",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FCDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "MenuSet_Create",
+	"_Type": "Page"
+}

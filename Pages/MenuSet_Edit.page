@@ -1,0 +1,84 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/ChefsDelight/Actions/MenuSet_UpdateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Edit Menu",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Main Dish",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCEditMainDish",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Price",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCEditPrice",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "KCal",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCEditKcal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sides",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCEditSides",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Soup",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter value",
+							"_Name": "FCEditSoup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Date of Lunch",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FCEditDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "MenuSet_Edit",
+	"_Type": "Page"
+}

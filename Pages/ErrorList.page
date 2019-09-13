@@ -1,0 +1,39 @@
+{
+	"Caption": "Error List",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"EmptySection": {
+						"Caption": "No Sync Errors Found"
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"DetailImageIsCircular": false,
+						"OnPress": "/ChefsDelight/Actions/NavToErrorDetail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{RequestMethod}",
+						"Subhead": "{RequestURL}",
+						"Title": "{HTTPStatusCode}"
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "ErrorArchive",
+						"QueryOptions": "",
+						"ReadLink": "",
+						"Service": "/ChefsDelight/Services/canteenService.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ErrorList",
+	"_Type": "Page"
+}
